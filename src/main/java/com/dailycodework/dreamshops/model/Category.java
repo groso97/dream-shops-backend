@@ -21,7 +21,7 @@ public class Category {
 
     @JsonIgnore
     @OneToMany
-    @JoinColumn(name = "category")
+//    @JoinColumn(name = "category")
     private List<Product> products;
 
     public Category(String name) {
