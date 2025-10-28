@@ -6,6 +6,7 @@ import com.dailycodework.dreamshops.model.CartItem;
 import com.dailycodework.dreamshops.model.Product;
 import com.dailycodework.dreamshops.repositories.CartItemRepository;
 import com.dailycodework.dreamshops.repositories.CartRepository;
+import com.dailycodework.dreamshops.services.cart.CartService;
 import com.dailycodework.dreamshops.services.cart.ICartService;
 import com.dailycodework.dreamshops.services.product.IProductService;
 import lombok.RequiredArgsConstructor;
@@ -21,6 +22,7 @@ public class CartItemService implements ICartItemService {
     private final IProductService iproductService;
     private final ICartService iCartService;
     private final CartRepository cartRepository;
+    private final CartService cartService;
 
     @Override
     public void addItemToCart(Long cartId, Long productId, int quantity) {
@@ -53,8 +55,8 @@ public class CartItemService implements ICartItemService {
 
     @Override
     public void removeItemFromCart(Long cartId, Long productId) {
-        Cart cart = iCartService.getCartById(cartId);
-        CartItem itemToRemove = getCartItemById(cartId,productId);
+        Cart cart = cartService.getCartById(cartId);
+        CartItem itemToRemove = getCartItem(cartId,productId);
         cart.removeItem(itemToRemove);
         cartRepository.save(cart);
     }
@@ -77,10 +79,9 @@ public class CartItemService implements ICartItemService {
         cartRepository.save(cart);
     }
 
-
     @Override
-    public CartItem getCartItemById(Long cartId, Long productId){
-        Cart cart = iCartService.getCartById(cartId);
+    public CartItem getCartItem(Long cartId, Long productId){
+        Cart cart = cartService.getCartById(cartId);
         return cart.getCartItems()
                 .stream()
                 .filter(item -> item.getProduct().getId().equals(productId))
