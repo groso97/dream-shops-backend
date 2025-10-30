@@ -1,8 +1,8 @@
 package com.dailycodework.dreamshops.controllers;
 
 import com.dailycodework.dreamshops.DTO.UserDto;
-import com.dailycodework.dreamshops.Exceptions.AlreadyExistsException;
-import com.dailycodework.dreamshops.Exceptions.ResourceNotFoundException;
+import com.dailycodework.dreamshops.exceptions.AlreadyExistsException;
+import com.dailycodework.dreamshops.exceptions.ResourceNotFoundException;
 import com.dailycodework.dreamshops.model.User;
 import com.dailycodework.dreamshops.request.CreateUserRequest;
 import com.dailycodework.dreamshops.request.UserUpdateRequest;

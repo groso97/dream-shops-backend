@@ -1,6 +1,6 @@
 package com.dailycodework.dreamshops.services.cart;
 
-import com.dailycodework.dreamshops.Exceptions.ResourceNotFoundException;
+import com.dailycodework.dreamshops.exceptions.ResourceNotFoundException;
 import com.dailycodework.dreamshops.model.Cart;
 import com.dailycodework.dreamshops.model.User;
 import com.dailycodework.dreamshops.repositories.CartItemRepository;

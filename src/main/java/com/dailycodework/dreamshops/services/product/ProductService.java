@@ -2,9 +2,9 @@ package com.dailycodework.dreamshops.services.product;
 
 import com.dailycodework.dreamshops.DTO.ImageDto;
 import com.dailycodework.dreamshops.DTO.ProductDto;
-import com.dailycodework.dreamshops.Exceptions.AlreadyExistsException;
-import com.dailycodework.dreamshops.Exceptions.ProductNotFoundException;
-import com.dailycodework.dreamshops.Exceptions.ResourceNotFoundException;
+import com.dailycodework.dreamshops.exceptions.AlreadyExistsException;
+import com.dailycodework.dreamshops.exceptions.ProductNotFoundException;
+import com.dailycodework.dreamshops.exceptions.ResourceNotFoundException;
 import com.dailycodework.dreamshops.model.Category;
 import com.dailycodework.dreamshops.model.Image;
 import com.dailycodework.dreamshops.model.Product;

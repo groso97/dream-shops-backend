@@ -1,7 +1,7 @@
 package com.dailycodework.dreamshops.services.order;
 
 import com.dailycodework.dreamshops.DTO.OrderDto;
-import com.dailycodework.dreamshops.Exceptions.ResourceNotFoundException;
+import com.dailycodework.dreamshops.exceptions.ResourceNotFoundException;
 import com.dailycodework.dreamshops.enums.OrderStatus;
 import com.dailycodework.dreamshops.model.Cart;
 import com.dailycodework.dreamshops.model.Order;

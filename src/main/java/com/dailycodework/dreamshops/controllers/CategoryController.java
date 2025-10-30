@@ -1,8 +1,8 @@
 package com.dailycodework.dreamshops.controllers;
 
 
-import com.dailycodework.dreamshops.Exceptions.AlreadyExistsException;
-import com.dailycodework.dreamshops.Exceptions.CategoryNotFoundException;
+import com.dailycodework.dreamshops.exceptions.AlreadyExistsException;
+import com.dailycodework.dreamshops.exceptions.CategoryNotFoundException;
 import com.dailycodework.dreamshops.model.Category;
 import com.dailycodework.dreamshops.response.ApiResponse;
 import com.dailycodework.dreamshops.services.category.CategoryService;

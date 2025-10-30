@@ -1,7 +1,7 @@
 package com.dailycodework.dreamshops.services.category;
 
-import com.dailycodework.dreamshops.Exceptions.AlreadyExistsException;
-import com.dailycodework.dreamshops.Exceptions.CategoryNotFoundException;
+import com.dailycodework.dreamshops.exceptions.AlreadyExistsException;
+import com.dailycodework.dreamshops.exceptions.CategoryNotFoundException;
 import com.dailycodework.dreamshops.model.Category;
 import com.dailycodework.dreamshops.repositories.CategoryRepository;
 import lombok.RequiredArgsConstructor;

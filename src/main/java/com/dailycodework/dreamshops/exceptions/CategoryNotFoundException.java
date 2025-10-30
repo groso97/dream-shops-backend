@@ -1,4 +1,4 @@
-package com.dailycodework.dreamshops.Exceptions;
+package com.dailycodework.dreamshops.exceptions;
 
 public class CategoryNotFoundException extends RuntimeException {
     public CategoryNotFoundException(String message) {

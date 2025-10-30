@@ -1,7 +1,7 @@
 package com.dailycodework.dreamshops.services.image;
 
 import com.dailycodework.dreamshops.DTO.ImageDto;
-import com.dailycodework.dreamshops.Exceptions.ImageNotFoundException;
+import com.dailycodework.dreamshops.exceptions.ImageNotFoundException;
 import com.dailycodework.dreamshops.model.Image;
 import com.dailycodework.dreamshops.model.Product;
 import com.dailycodework.dreamshops.repositories.ImageRepository;
